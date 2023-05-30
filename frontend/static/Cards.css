@@ -12,7 +12,7 @@ label{
   font-size: 1em;
 }
 .card {
-  width: 750px;
+  width: 500px;
   height: 200px;
   background: #6c63ff;
   padding: 1rem;
@@ -108,7 +108,7 @@ main h1 {
 
 .card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 }
@@ -131,4 +131,29 @@ main h1 {
   transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
   box-shadow: -5px 5px 0px 0px #6c63ff;
   margin-bottom: 30px;
+}
+
+.drop-container {
+  height: 150px;
+  width: 150px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, .2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 5px;
+  background-color: rgba(108, 99, 255, 0.2);
+}
+.header {
+  flex: 1;
+  width: 100%;
+  border: 2px dashed #6c63ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
