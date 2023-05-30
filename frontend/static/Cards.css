@@ -1,0 +1,134 @@
+body {
+  background-color: aliceblue;
+}
+h1{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+label{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1em;
+}
+.card {
+  width: 750px;
+  height: 200px;
+  background: #6c63ff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: .5vmin solid #05060f;
+  box-shadow: .4rem .4rem #05060f;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translate(5px, -5px);
+}
+
+/*Card content*/
+.pricing-block-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: .5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pricing-plan {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+.price-value {
+  display: flex;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.8em 2em;
+  background-color: #fff;
+  border: 3px solid #6c63ff;
+  border-radius: 1em;
+  color: #000;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px #6c63ff;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card img {
+  min-width: 230px;
+  min-height: 180px;
+  max-width: 230px;
+  max-height: 180px;
+  border-radius: 100%;
+
+}
+
+input:hover {
+  transform: translate(5px, -5px);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.date-picker {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.solid {
+  border-top: 1px solid rgb(190, 188, 188);
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.map::before{
+  font-size: 2em;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+.map {
+  text-align: center;
+  margin-left: 70px;
+  margin-top: auto;
+  margin-right: 70px;
+  font-size: 1rem;
+  border: 3px solid #6c63ff;
+  border-radius: 1em;
+  color: #000;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px #6c63ff;
+  margin-bottom: 30px;
+}
