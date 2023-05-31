@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&family=Montserrat:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="static/Cards.css">
+  <title>Trip Planner</title>
+</head>
+
+<body>
+  <h1>Plan Your Adventure Here</h1>
+
+  <hr class="solid" />
+
+  <div class="container">
+
+    <div class="date-picker">
+      <label>Start date &nbsp &nbsp &nbsp<input type="date" name="start"></input></label>
+      <label>End date &nbsp &nbsp &nbsp<input type="date" name="end"></input></label>
+    </div>
+
+    <div class="map-parent">
+
+      <div class="map">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7785276465693!2d77.56456277494254!3d12.921951287388836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1581f297e32d%3A0xe9a257cf4383019e!2sBNM%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1685369699830!5m2!1sen!2sin"
+        width="1510" height="810" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="map-svg">
+        <img src="static/Map.svg" alt="Map">
+      </div>
+    </div>
+    <!-- card 1 -->
+    <div class="card-container">
+
+      <div class="card">
+        <span>
+          <img src="static/trekking.svg" alt="Adventure Photo">
+        </span>
+
+
+        <div class="pricing-block-content">
+          <p class="pricing-plan">Trekking</p>
+          <div class="price-value">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo ut necessitatibus, nobis ratione
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd card -->
+      <div class="card">
+        <span>
+          <img src="static/fishing.svg" alt="Adventure Photo">
+        </span>
+
+
+        <div class="pricing-block-content">
+          <p class="pricing-plan">Fishing</p>
+          <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo ut necessitatibus, nobis ratione</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd card -->
+      <div class="card">
+        <span>
+          <img src="static/night camp.svg" alt="Adventure Photo">
+        </span>
+
+
+        <div class="pricing-block-content">
+          <p class="pricing-plan">Night Camp</p>
+          <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo ut necessitatibus, nobis ratione</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4th card -->
+      <div class="card">
+        <span>
+          <img src="static/trekking.svg" alt="Adventure Photo">
+        </span>
+
+
+        <div class="pricing-block-content">
+          <p class="pricing-plan">Trekking</p>
+          <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo ut necessitatibus, nobis ratione</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- 5th card -->
+      <div class="card">
+        <span>
+          <img src="static/fishing.svg" alt="Adventure Photo">
+        </span>
+
+
+        <div class="pricing-block-content">
+          <p class="pricing-plan">Fishing</p>
+          <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo ut necessitatibus, nobis ratione</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6thth card -->
+      <div class="card">
+        <span>
+          <img src="static/night camp.svg" alt="Adventure Photo">
+        </span>
+
+
+        <div class="pricing-block-content">
+          <p class="pricing-plan">Night Camp</p>
+          <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo ut necessitatibus, nobis ratione</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> <!--  card conatiner ends here-->
+
+  <div class="drop-parent-container">
+    <div class="drop-container">
+      <div class="header">
+      </div>
+    </div>
+
+    <div class="drop-container">
+      <div class="header">
+      </div>
+    </div>
+
+    <div class="drop-container">
+      <div class="header">
+      </div>
+    </div>
+
+    <div class="drop-container">
+      <div class="header">
+      </div>
+    </div>
+
+    <div class="drop-container">
+      <div class="header">
+      </div>
+    </div>
+
+    <div class="drop-container">
+      <div class="header">
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    const cards = document.querySelectorAll(".card");
+    const square = document.querySelector('.drop-container');
+    cards.forEach((card) => {
+      card.addEventListener('dragstart', dragStart);
+
+    })
+
+  </script>
+</body>
+
+</html>
