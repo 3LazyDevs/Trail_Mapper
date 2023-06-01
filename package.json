@@ -2,7 +2,7 @@
   "name": "trail_mapper",
   "version": "1.0.0",
   "description": "Shoot Your Webs Project",
-  "main": "app.js",
+  "main": "index.js",
   "engines" : {
     "node" : "18x"
   }
