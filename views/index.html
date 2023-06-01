@@ -32,6 +32,58 @@
             autoplay></lottie-player>
     </div>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <div class="info">
+        <div class="info-text info-text-1 hidden">    
+            <h2>Select Dates</h2>
+            <p>Trail Mapper allows users to select their adventure and create an itinerary by dragging adventure cards and
+                placing them in the drop box provided at the end of the page </p>
+        </div>
+        <div class="info-img hidden">
+            <video controls height="400" width="700">
+                <source src="/media/video.mp4" type="video/mp4">
+            </video>
+        </div>
+       <!-- 2nd -->
+        <div class="info-img hidden">
+            <video controls height="400" width="700">
+                <source src="/media/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="info-text info-text-2 hidden">    
+            <h2>Choose Destination</h2>
+            <p>Trail Mapper allows users to select their adventure and create an itinerary by dragging adventure cards and
+                placing them in the drop box provided at the end of the page </p>
+        </div>
+        <!-- 3rd -->
+        <div class="info-text info-text-1 hidden">    
+            <h2>Drag and Drop</h2>
+            <p>Trail Mapper allows users to select their adventure and create an itinerary by dragging adventure cards and
+                placing them in the drop box provided at the end of the page </p>
+        </div>
+        <div class="info-img hidden">
+            <video controls height="400" width="700">
+                <source src="/media/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script>
+        const observer = new IntersectionObserver((items) => {
+            items.forEach((item) => {
+                if (item.isIntersecting) {
+                    item.target.classList.add("show");
+                }
+                else {
+                    item.target.classList.remove("show");
+                }
+            })
+        })
+        const hiddenItems = document.querySelectorAll(".hidden");
+        hiddenItems.forEach((item) => {
+            observer.observe(item);
+        })
+
+    </script>
 </body>
 
 </html>
