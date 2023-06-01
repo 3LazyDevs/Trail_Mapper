@@ -1,28 +1,22 @@
 {
   "name": "trail_mapper",
   "version": "1.0.0",
-  "description": "Shoot Your Webs Project",
-  "main": "index.js",
-  "engines" : {
-    "node" : "18x"
-  }
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start" : "node index.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/3LazyDevs/Trail_Mapper.git"
-  },
-  "author": "Lazy_Devs",
+  "author": "Lazy_devs",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/3LazyDevs/Trail_Mapper/issues"
-  },
-  "homepage": "https://github.com/3LazyDevs/Trail_Mapper#readme",
   "dependencies": {
-    "ejs": "^3.1.9",
-    "express": "^4.18.2",
-    "path": "^0.12.7"
+    "axios": ">=0.21.1",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
