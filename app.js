@@ -5,15 +5,18 @@ const path = require('path');
 const app = express();
 const PORT=3000;
 
-app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
 app.get('/', (req, res)=>{
-    res.render('Landing');
+    res.sendFile(__dirname + "/views/index.html");
+});
+app.get('/destinations', (req, res)=>{
+    res.sendFile(__dirname + "/views/Cards.html");
 });
 app.get('/landing', (req, res)=>{
-    res.render('Cards')
+    res.sendFile(__dirname + "/views/middle_page.html");
 });
+
 
 
 app.listen(PORT, ()=>{
